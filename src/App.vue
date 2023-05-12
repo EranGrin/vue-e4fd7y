@@ -22,7 +22,6 @@
     >
       Footer
     </div>
-    <img alt="Vue logo" src="https://vuejs.org/images/logo.png" />
   </div>
 </template>
 
@@ -32,7 +31,7 @@ import TruncateTest from './components/TruncateTest.vue';
 
 export default {
   name: 'App',
-  components: {TruncateTest},
+  components: { TruncateTest },
 };
 </script>
 

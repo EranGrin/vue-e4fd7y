@@ -1,5 +1,13 @@
 <template>
-  <div style="color: red">
+
+  <div >
+    <a href="" target="_blank">
+      <img style="width: 6rem" src="https://vuejs.org/images/logo.png" class="logo vue" alt="Vue logo" />
+    </a>
+  </div>
+
+  <div style="">
+   <h2> Read more plugin with v-html</h2>
     <TruncateReadMore :truncate-value="600" :only-if-more-than-value="20">
       <template #html>
         <div v-html="htmlData" />
@@ -7,6 +15,7 @@
     </TruncateReadMore>
 
     <hr />
+    <h2> Read more plugin with <span style="font-weight: 900">slot</span></h2>
 
     <TruncateReadMore :truncate-value="600" :only-if-more-than-value="20">
       <template #html>
@@ -102,3 +111,8 @@ export default {
   },
 };
 </script>
+<style>
+.readmore-button-container {
+  color: blue;
+}
+</style>
